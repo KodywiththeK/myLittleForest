@@ -47,20 +47,20 @@ export default function HomeCommitCalendar() {
   calendarArr.map((i) => {
     if (values.map((value) => value.date).includes(i)) {
       if (values.find((value) => value.date === i)?.count === 0)
-        resultArr.push('bg-[#534340]');
+        return resultArr.push('bg-[#534340]');
       if (values.find((value) => value.date === i)?.count === 1)
-        resultArr.push('bg-[#B4E197]');
+        return resultArr.push('bg-[#B4E197]');
       if (values.find((value) => value.date === i)?.count === 2)
-        resultArr.push('bg-[#9DC08B]');
+        return resultArr.push('bg-[#9DC08B]');
       if (values.find((value) => value.date === i)?.count === 3)
-        resultArr.push('bg-[#4e944f]');
+        return resultArr.push('bg-[#4e944f]');
       if (
         values.find((value) => value.date === i) !== undefined &&
         Number(values.find((value) => value.date === i)?.count) > 3
       )
-        resultArr.push('bg-[#446a46]');
+        return resultArr.push('bg-[#446a46]');
     } else {
-      resultArr.push('bg-[#534340]');
+      return resultArr.push('bg-[#534340]');
     }
   });
 

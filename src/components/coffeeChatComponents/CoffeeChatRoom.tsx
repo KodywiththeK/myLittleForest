@@ -21,9 +21,9 @@ export default function CoffeeChatRoom({ chatRooms }: CoffeeChatRoomPropsType) {
         chatRooms.map((room, index) => (
           <div
             key={room.roomName + String(index)}
-            className="relative mb-5 flex min-h-[280px] w-full min-w-[100vw] flex-col"
+            className="relative flex min-h-[280px] w-full flex-col"
           >
-            <div className="absolute inset-x-4 inset-y-0 flex flex-col justify-between rounded-2xl bg-midNavy p-6 text-white">
+            <div className="absolute inset-0 flex flex-col justify-between rounded-2xl bg-midNavy p-6 text-white">
               <div className="mr-8 text-[19px] font-semibold leading-6">
                 {room.roomName}
               </div>

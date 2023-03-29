@@ -9,11 +9,11 @@ export default function MyProfile() {
 
   return (
     <>
-      <div className="relative flex h-full min-h-screen w-full min-w-[100vw] flex-col items-center bg-darkNavy text-white">
+      <div className="relative mt-16 flex h-full min-h-screen w-full min-w-[100vw] flex-col items-center gap-4 bg-darkNavy p-4 text-white">
         <MyProfileHeader />
         <MyProfileInfo />
-        <div className="mt-8 flex w-full flex-col items-center">
-          <div className="flex w-[90%] items-center justify-around border border-darkNavy border-b-[#2F4658] font-semibold ">
+        <div className="flex w-full justify-center">
+          <div className="flex w-full items-center justify-around border border-darkNavy border-b-[#2F4658] font-semibold ">
             <button
               onClick={() => setPostView(true)}
               className={`w-[110px] cursor-pointer border border-darkNavy ${
@@ -31,8 +31,8 @@ export default function MyProfile() {
               스크랩
             </button>
           </div>
-          <MyProfilePostFormat />
         </div>
+        <MyProfilePostFormat />
       </div>
       <FooterMenu />
     </>

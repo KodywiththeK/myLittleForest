@@ -6,7 +6,7 @@ import profile1 from '../../assets/profile1.jpg';
 
 export default function MyProfileHeader() {
   return (
-    <div className="flex w-full justify-between px-6 pt-[60px] pb-[20px] text-[26px] font-bold text-white">
+    <div className="flex w-full justify-between text-[26px] font-bold text-white">
       <div className="flex flex-col">
         <div className="my-2 flex items-center">
           <FcReadingEbook className="mr-2 mb-1" /> {`Kody님`}

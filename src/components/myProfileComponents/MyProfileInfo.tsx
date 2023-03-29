@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MyProfileInfo() {
   return (
-    <div className="mt-3 flex h-[185px] w-[90%] flex-col rounded-2xl bg-[#3D6374] text-white">
+    <div className="mt-3 flex h-[185px] w-full flex-col rounded-2xl bg-[#3D6374] text-white">
       <div className="flex h-[130px] w-full items-center justify-around px-3">
         <div className="flex flex-col items-center justify-around text-[22px] font-bold">
           <div>2</div>

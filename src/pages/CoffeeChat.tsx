@@ -57,9 +57,9 @@ export default function CoffeeChat() {
   }
 
   return (
-    <div className="relative flex h-full min-h-screen w-full min-w-[100vw] flex-col items-center bg-darkNavy">
+    <div className="relative mt-16 flex h-full min-h-screen w-full min-w-[100vw] flex-col items-center gap-4 bg-darkNavy p-4">
       <CoffeeTitle chatRooms={chatRooms} />
-      <div className="mb-6 w-full px-4">
+      <div className="w-full">
         <input
           onKeyDown={(e) => {
             // e.preventDefault();
