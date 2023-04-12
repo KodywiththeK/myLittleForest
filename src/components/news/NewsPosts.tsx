@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IBlogData } from '../../store/dummy';
 
@@ -14,7 +14,7 @@ export default function NewsPosts({ newsData }: INewsPostsPropsType) {
       {newsData.map((data) => (
         <li onClick={() => navigate(`/newsDetail/${data.id}`)} key={data.id} className="mb-4 flex h-[115px] cursor-pointer items-center gap-1 rounded-[20px] bg-midIvory dark:bg-midNavy">
           <div className="shrink-0">
-            <img src={data.img} alt={data.title} className="w-[115px] rounded-[20px]" />
+            <img src={data.img as string} className="h-[115px] w-[115px] rounded-[20px] object-cover" />
           </div>
           <div className="w-full overflow-hidden pl-3 pr-5">
             <h1 className="mb-2 truncate text-base font-bold">{data.title}</h1>

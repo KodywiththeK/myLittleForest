@@ -4,7 +4,7 @@ export interface IBlogData {
   type: string;
   likeCount: number;
   commentCount: number;
-  img: string;
+  img: string | void;
   title: string;
   detail: string;
   view: number;
